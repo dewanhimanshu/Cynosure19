@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.title {
+    position: absolute;
+    width: 500px;
+    height: 135px;
+    left: calc(50% - 500px/2);
+    top: calc(50% - 135px);
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: -2px;
+
+    background: -moz-linear-gradient(127deg, rgba(72,198,239,1) 0%, rgba(111,134,214,1) 100%);
+background: -webkit-linear-gradient(127deg, rgba(72,198,239,1) 0%, rgba(111,134,214,1) 100%);
+background: linear-gradient(127deg, rgba(72,198,239,1) 0%, rgba(111,134,214,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#48c6ef",endColorstr="#6f86d6",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+animation: 1s ease-out 0s 1 slide;
+  }
+
+
+::selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+
+
+  @keyframes slide {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 100;
+}
+}
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer; 
+    }
