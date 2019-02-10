@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang=en>
 
@@ -38,7 +37,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   background-image: linear-gradient(to right, #034378, #2d4e68);
   -webkit-font-smoothing: antialiased;
@@ -46,21 +44,80 @@ body {
   height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
-
+        nav {
+      width: 100%;
+      margin: 30px 30px; }
+    nav ul {
+      list-style: none;
+      overflow: hidden; }
+    nav ul li {
+      float: left;
+      width: 15%; }
+    nav ul li a {
+      text-align: center;
+      padding: 20px 0;
+      display: block;
+      width: 100%;
+      background:   #1870b4  ; /* Old browsers */
+      background: -moz-linear-gradient(top,  
+          #1870b4   0%,  #1abc9c  100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, 
+        color-stop(0%, #17a589 ), 
+        color-stop(100%, #1abc9c )); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  
+          #1870b4   0%, #1abc9c 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  
+          #1870b4   0%, #1abc9c  100%); /* Opera 11.10+ */
+      background: linear-gradient(to bottom,  
+          #1870b4   0%, #1abc9c  100%); /* W3C, IE10+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='  #1870b4  ', 
+        endColorstr=' #1abc9c ',GradientType=0 ); /* IE6-9 */
+      }
+    nav ul li a,
+    nav ul li a:focus,
+    nav ul li a:visited,
+    nav ul li a:hover,
+    nav ul li a:active {
+      color: #000;
+      text-decoration: none; }
+    nav ul li a:hover,
+    nav ul li a:active {
+      background:  #07497d ; /* Old browsers */
+      background: -moz-linear-gradient(top,  
+         #07497d  0%,  #07497d  100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, 
+        color-stop(0%, #07497d ), 
+        color-stop(100%, #07497d )); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  
+         #07497d  0%, #07497d  100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  
+         #07497d 0%, #07497d  100%); /* Opera 11.10+ */
+      background: linear-gradient(to bottom,  
+         #07497d  0%, #07497d  100%); /* W3C, IE10+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr=' #07497d ', 
+        endColorstr=' #07497d ',GradientType=0 ); /* IE6-9 */
+      }
+    nav ul li:first-child a {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px; 
+}
+    nav ul li:last-child a {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+}
 a {
   text-decoration: none;
 }
-
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
-
 .row {
   max-width: 900px;
   margin: 50px auto 0;
 }
-
 .card {
   float: left;
   padding: 0 1.7rem;
@@ -137,7 +194,6 @@ h1 {
   -webkit-transform: translateY(-60px);
           transform: translateY(-60px);
 }
-
 .example-1 .wrapper {
   background: url(http://cse.mait.ac.in/images/WhatsApp-Image-2017-03-04-at-3.10.00-PM.jpeg) 20% 1%/cover no-repeat;
 }
@@ -236,7 +292,6 @@ h1 {
 .example-1 .menu-content span {
   top: -10px;
 }
-
 .example-2 .wrapper {
   background: url(http://www.prescottvalleypolice.net/calendar/Computer%20Science%20Week%20Flyer.jpg) center/cover no-repeat;
 }
@@ -305,12 +360,9 @@ h1 {
           transform: translate(5px, -50%);
   opacity: 1;
 }
-
-
 .row-style{
     margin-top: 100px;
 }
-
     </style>
 
 </head>
@@ -320,11 +372,30 @@ h1 {
     <progress value="0" id="progressBar">
         <div class="progress-container"></div>
     </progress>
-
+     <nav>
+      <ul>
+        <li>
+            <a href="#"><font  color="white" style="bold" size="5sp" >HOME</font></a>
+        </li>
+        <li>
+            <a href="#"><font color="white" style="bold" size="5sp" >OPTION 1</font></a>
+        </li>
+        <li>
+            <a href="#"><font color="white" style="bold" size="5sp" >OPTION 2</font></a>
+        </li>
+        <li>
+            <a href="#"><font color="white" style="bold" size="5sp" >OPTION 3</font></a>
+        </li>
+        <li>
+            <a href="#"><font color="white" style="bold" size="5sp" >OPTION 4</font></a>
+        </li>
+      </ul>
+    </nav>   
     <canvas id="c"></canvas>
         
     <div id="hero"></div>
     <h1 class="title">Cynosure 2019</h1>
+    
 
     <section class="landing-container justify-content-center" >
         <div class="container-fluid">
