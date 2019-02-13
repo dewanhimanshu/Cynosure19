@@ -573,3 +573,38 @@ a {
   background-color: #e91b26;
 
 }
+/*Shivank style*/
+#forspon
+{
+	text-align: center;
+	font-family: bold;
+	color: #ff0066;
+}
+* {
+  box-sizing: border-box;
+}
+.bck
+{
+	background-color:black;
+}
+.cl 
+{
+  float: left;
+  width: 33.33%;
+  padding: 55px 55px 55px 175px;
+}
+
+.r::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) 
+{
+  .cl 
+  {
+    width: 250%;
+  }
+}
