@@ -573,3 +573,40 @@ a {
   background-color: #e91b26;
 
 }
+
+
+
+
+#forspon
+{
+	text-align: center;
+	color: red;
+}
+* {
+  box-sizing: border-box;
+}
+.bck
+{
+	background-color:black;
+}
+.cl 
+{
+  float: left;
+  width: 33.33%;
+  padding: 55px;
+}
+
+.r::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) 
+{
+  .cl 
+  {
+    width: 250%;
+  }
+}
