@@ -1,0 +1,90 @@
+
+<%= stylesheet_link_tag    'form' %>
+
+
+
+<div class="middle">
+  <h1>HackHansraj 1.0</h1>
+ 
+  <form accept-charset="UTF-8" action="/hackathon/submit" method="post"  >
+    <div id="fancy-inputs">
+    <label class="input">
+      <input type="text"  required="required"  name='team_name'>
+      <span><span>Team Name</span></span>
+    </label>
+
+    <label class="input">
+      <input type="text" name='leader_name' required="required">
+      <span><span>Leader Name</span></span>
+    </label>
+
+    <label class="input" name='team_menbers_number'>
+     <span><span>Team Members(Max 4)</span></span>
+    </label>
+    </div>
+
+
+  
+  
+  <div id="fancy-radio">
+    <input type="radio" name="group" id="questions" class="pull-left" style="display: none;" >
+    <label class="radio questions" for="questions">Lone Wolf</label>
+
+    <input type="radio" name="group" id="photo" class="pull-left" style="display: none;">
+    <label class="radio photo" for="photo">Pack(2+)</label>
+  </div>
+
+  <div id="fancy-inputs">
+<label class="input">
+<input type="textbox" name='team_members_details' required="required">
+<span><span>Enter your Team Members Name</span></span>
+</label>
+
+<div id="fancy-inputs">
+<label class="input">
+<input type="text" name='contact_number' required="required">
+<span><span>Enter Your Contact Number</span></span>
+</label>
+<div id="fancy-inputs">
+<label class="input" >
+<input type="textarea" name='email_id' required="required">
+<span><span>Enter Your Email Id</span></span>
+</label>
+
+</div>
+
+
+  
+  <button type="submit" class="btn">Done 🎉</button>
+
+</div>
+</form>
+
+</div>
+
+
+
+<script>
+// Inputs
+
+$('#fancy-inputs input[type="text"]').blur(function(){
+  if($(this).val().length > 0){
+    $(this).addClass('white');
+  } else {
+    $(this).removeClass('white');
+  }
+});
+
+// Radios
+
+$("#fancy-radio input[type=radio]").click(function() {
+  $('label.radio').removeClass('selected');
+  var inputID = $(this).attr('id');
+  if ($(this).is(':checked')) {
+    $('.' + inputID).addClass('selected');
+  } else {
+    $('.' + inputID).removeClass('selected');
+  }
+});
+
+</script>

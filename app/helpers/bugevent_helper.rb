@@ -1,0 +1,2 @@
+module BugeventHelper
+end
