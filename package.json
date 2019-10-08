@@ -1,0 +1,7 @@
+{
+  "name": "cynosure",
+  "private": true,
+  "dependencies": {
+    "noty": "^3.2.0-beta"
+  }
+}

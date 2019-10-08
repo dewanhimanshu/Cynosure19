@@ -1,0 +1,30 @@
+
+<head>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<h1>Likes Page :: Target is 1000 Likes </h1>
+
+<div id='show' >0</div>
+<button id='btn' onclick="myFunction()">Like</button>
+
+<script>
+localStorage.setItem('likes',0)
+
+    function myFunction(){
+      console.log('trigger')
+      like_count = localStorage.getItem('likes'); 
+      like_count =  parseInt(like_count) + 1
+      if(like_count>1000){
+          axios.post('/users/complete1',{data:'data'})
+            .then(function(response){
+                console.log('Successful')
+            })
+      }
+      localStorage.setItem('likes',like_count);
+      
+      
+      document.getElementById('show').innerHTML = like_count
+    }
+
+
+</script>
