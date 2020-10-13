@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SCROLL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .scroll {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    text-align: center;
+    font-size: 40px;
+
+  }
+  .scroll .fa{
+    color:#fff;
+    margin:0;
+    padding:0;
+    animation: animate 1.2s linear infinite;
+  }
+   @keyframes animate
+  {
+      0%
+      {
+        transform: translateY(-40px);
+        text-shadow: 0 30px 0 #fff;
+      }
+      20%
+      {
+        transform: translateY(0px);
+        text-shadow: 0 10px 0 #fff;
+      }
+      40%
+      {
+        transform: translateY(0px);
+        text-shadow: 0 0px 0 #fff;
+      }
+      60%
+      {
+        transform: translateY(0px);
+        text-shadow: 0 -10px 0 #fff;
+      }
+      100%
+      {
+        transform: translateY(70px);
+        text-shadow: 0 -30px 0 #fff;
+      }
+
+  }
+  .bg-1 { 
+    background-color: #b3003b; 
+  }
+</style>
+<body class="bg-1">
+  <a href=""><div class="scroll">
+    <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+  <span></span><span></span><span></span>
+  </a>
+</body>
+</head>
+</html>
